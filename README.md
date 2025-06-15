@@ -18,9 +18,9 @@ Install the package through [Composer](http://getcomposer.org/).
 For Laravel 5.1~:
 `composer require "darryldecode/cart:~2.0"`
 
-For Laravel 5.5, 5.6, or 5.7~, 9:
+For Laravel 5.5, 5.6, or 5.7~, 9, 10, 11, 12:
 
-```composer require "darryldecode/cart:~4.0"``` or 
+```composer require "darryldecode/cart:~4.0"``` or
 ```composer require "darryldecode/cart"```
 
 ## CONFIGURATION
@@ -94,7 +94,7 @@ foreach($items as $row) {
 	echo $row->name;
 	echo $row->qty;
 	echo $row->price;
-	
+
 	echo $item->associatedModel->id; // whatever properties your model have
         echo $item->associatedModel->name; // whatever properties your model have
         echo $item->associatedModel->description; // whatever properties your model have
@@ -158,11 +158,11 @@ There are several ways you can add items on your cart, see below:
  # ALWAYS REMEMBER TO BIND THE CART TO A USER BEFORE CALLING ANY CART FUNCTION
  # SO CART WILL KNOW WHO'S CART DATA YOU WANT TO MANIPULATE. SEE IMPORTANT NOTICE ABOVE.
  # EXAMPLE: \Cart::session($userId); then followed by cart normal usage.
- 
+
  # NOTE:
  # the 'id' field in adding a new item on cart is not intended for the Model ID (example Product ID)
- # instead make sure to put a unique ID for every unique product or product that has it's own unique prirce, 
- # because it is used for updating cart and how each item on cart are segregated during calculation and quantities. 
+ # instead make sure to put a unique ID for every unique product or product that has it's own unique prirce,
+ # because it is used for updating cart and how each item on cart are segregated during calculation and quantities.
  # You can put the model_id instead as an attribute for full flexibility.
  # Example is that if you want to add same products on the cart but with totally different attribute and price.
  # If you use the Product's ID as the 'id' field in cart, it will result to increase in quanity instead
@@ -1136,7 +1136,7 @@ class DBStorage {
 }
 ```
 
-For example you can also leverage Laravel's Caching (redis, memcached, file, dynamo, etc) using the example below. Example also includes cookie persistance, so that cart would be still available for 30 days. Sessions by default persists only 20 minutes. 
+For example you can also leverage Laravel's Caching (redis, memcached, file, dynamo, etc) using the example below. Example also includes cookie persistance, so that cart would be still available for 30 days. Sessions by default persists only 20 minutes.
 
 ```php
 namespace App\Cart;
