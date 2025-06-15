@@ -1,5 +1,6 @@
 {
     "name": "sm-jahangir/laravelshoppingcart",
+    "version": "1.0.0",
     "description": "Laravel 5 to 12 Shopping cart",
     "keywords": [
         "laravel",
@@ -29,7 +30,7 @@
             "Darryldecode\\": "src/Darryldecode"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
