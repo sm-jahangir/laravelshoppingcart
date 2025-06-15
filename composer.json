@@ -1,7 +1,11 @@
 {
-    "name": "saleem189/cart",
-    "description": "Laravel 5 Shopping cart",
-    "keywords": ["laravel", "shopping cart", "cart"],
+    "name": "sm-jahangir/laravelshoppingcart",
+    "description": "Laravel 5 to 12 Shopping cart",
+    "keywords": [
+        "laravel",
+        "shopping cart",
+        "cart"
+    ],
     "license": "MIT",
     "authors": [
         {
